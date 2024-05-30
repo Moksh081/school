@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Carousel</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .carousel-images {
+    display: flex;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img:hover {
+    transform: scale(1.1);
+  }
+  /*
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  */
+  
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="carousel-images">
+      <img src="m1.jpg" alt="Image 1">
+      <img src="m5.jpg" alt="Image 5">
+      <img src="m2.jpg" alt="Image 2">
+      <img src="m6.jp.jpg" alt="Image 5">
+      <img src="m3.jpg" alt="Image 3">
+      <img src="m4.jpg" alt="Image 4">
+    </div>
+  </div>
+  <script >
+    const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const carouselImages = document.querySelector('.carousel-images');
+
+let counter = 0;
+const size = carouselImages.clientWidth;
+const slideWidth = size; // Adjust this value based on your image width and spacing
+const slideCount = carouselImages.children.length;
+let intervalId = null;
+
+const moveCarousel = () => {
+  counter++;
+  carouselImages.style.transition = 'transform 0.5s ease-in-out';
+  carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+};
+
+const startCarousel = () => {
+  intervalId = setInterval(() => {
+    moveCarousel();
+    if (counter === slideCount - 1) {
+      setTimeout(() => {
+        carouselImages.style.transition = 'none';
+        carouselImages.style.transform = 'translateX(0)';
+        counter = 0;
+      }, 500);
+    }
+  }, 3000); // Adjust the interval duration (in milliseconds) as needed
+};
+
+startCarousel();
+
+prevBtn.addEventListener('click', () => {
+  clearInterval(intervalId);
+  counter--;
+  if (counter < 0) {
+    counter = slideCount - 1;
+    carouselImages.style.transition = 'none';
+    carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+  } else {
+    carouselImages.style.transition = 'transform 0.5s ease-in-out';
+    carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+  }
+  startCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+  clearInterval(intervalId);
+  moveCarousel();
+  startCarousel();
+});
+
+  </script>
+</body>
+</html>

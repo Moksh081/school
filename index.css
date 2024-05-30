@@ -1,0 +1,9 @@
+/* Your existing CSS */
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 20px; /* Add some space from the top */
+}
+
+* {
+    text-decoration: none;
+}

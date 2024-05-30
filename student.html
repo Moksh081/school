@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .bac{
+    font-size: larger;
+}
+.text{
+  display: inline-flex;
+  padding-top: 3rem;
+}
+.txt{
+  position: absolute;
+}
+.both{
+  margin-left: -35rem;
+}
+        body {
+        font-family: Arial, sans-serif;
+        margin-top: -12rem;
+        margin-left: -5rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: white;
+      }
+      
+      .carousel {
+        position: absolute;
+        width: 500px;
+        max-width: 500px;
+      }
+      
+      .carousel-images {
+        display: flex;
+        perspective:500px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .carousel-images img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        margin: 0 10px;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .carousel-images img:hover {
+        transform: scale(1.1);
+      }
+      #im{
+        width: 300px;
+        height: 400px;
+        margin-left: -180%;
+      }
+      /*
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+      }
+      
+      .prev {
+        left: 10px;
+      }
+      
+      .next {
+        right: 10px;
+      }
+      */
+      .about{
+        font-size: larger;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+      }
+      .container{
+        display: block;
+      }
+      .about{
+        font-size: larger;
+        size: 50%;
+        font-weight: bolder;
+      }
+      .bac{
+        font-size: 35px;
+        font-weight: bolder;
+        size: 50%;
+      }
+      .txt2{
+        padding-top: 6rem;
+      }
+      </style>
+    </head>
+    <body>
+      <div class="ct">
+ <div class="container">
+    <div class="both">
+        <div class="bac_btn">
+            <div class="bac">
+                <a href="index.php"> <i class='bx bx-left-arrow-circle' ></i></a>
+            </div>
+        </div>
+            <div class="about">
+                <h3>Achievements </h3>
+            </div>
+    </div>
+        <div class="carousel">
+            <div class="carousel-images">
+              <img src="a1.jpg" alt="Image 1">
+              <img src="a2.jpg" alt="Image 2">
+              <img src="a3.jpg" alt="Image 3">
+              <img src="a4.jpg" alt="Image 4">
+            </div>
+            <div class="it">
+                <div class="text">
+                    <div>
+                      <img src="a5.jpg" alt="image 5" id="im">
+                    </div>
+                    <div class="txt">
+                      <h4>
+                        GOVT. SR. SEC. SCHOOL SANSARPUR TERRACE Affihated to H.P. Board (Dharamshala)
+                        </h4>
+                        <p>
+                        <li>Our Gems , Salient Features</li>
+                        <li>Streams: Science, Arts, Commerce</li>
+                       <li> National Cadet Corps (NCC)</li>
+                        <li>Scout & Guide (S&G)</li>
+                        <li>National Service Scheme (NSS)</li>
+                        <li>Two Smart Class Room</li>
+                        <li>Vocational Trade of Automobile</li>
+                        <li>Computer Science, Virtual Lab</li>
+                         <li>  Experienced & Complete Staff</li>
+                       <li> Large Ground for Sports Activities</li>
+                        <li>Hyegienic MDM Infrastructure</li>
+                       <li> Single Desk for Each Student</li>
+                      <li>  H.P. Board SOS Study Centre</li>
+                        <li>Closed Campus with CCTV Surveillance</li>
+                        </br>
+                        <a href="sansarpurterracegsss@gmail.com">Gmail. gsssterrace@gmail.com</a>
+                        </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="it">
+              <div class="text">
+                  <div>
+                    <img src="a6.jpg" alt="image 6" id="im">
+                  </div>
+                  <div class="txt">
+                    <p class="txt2">
+                      <h4>हीय सेवा योजना (N.S.S)</h4>
+                      <h5>ष्ट्रीट सेवा योजन NAL SERVICE S ESCHE</h5>
+                      <li>स्वस्थ युवा, उज्जवल भारत उदेश्य "मैं नहीं आप"</li>
+                      <li>NSS STATE LEVEL R.D. PARADE</li>
+                      CAMP-2019
+                      GOVT. MODEL BOYS SR. SEC. SCHOOL LALPANI, SHIMLA
+                      रा.व.मा. पाठशाলা
+                      
+                      संसारपुर टैरस, जिला काँगड़ा (हि.प्र.)</p>
+                  </div>
+                </div>
+          </div>
+          </div>
+</div>
+</div>
+    <script >
+        const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const carouselImages = document.querySelector('.carousel-images');
+    
+    let counter = 0;
+    const size = carouselImages.clientWidth;
+    const slideWidth = size; // Adjust this value based on your image width and spacing
+    const slideCount = carouselImages.children.length;
+    let intervalId = null;
+    
+    const moveCarousel = () => {
+      counter++;
+      carouselImages.style.transition = 'transform 0.5s ease-in-out';
+      carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+    };
+    
+    const startCarousel = () => {
+      intervalId = setInterval(() => {
+        moveCarousel();
+        if (counter === slideCount - 1) {
+          setTimeout(() => {
+            carouselImages.style.transition = 'none';
+            carouselImages.style.transform = 'translateX(0)';
+            counter = 0;
+          }, 500);
+        }
+      }, 3000); // Adjust the interval duration (in milliseconds) as needed
+    };
+    
+    startCarousel();
+    
+    prevBtn.addEventListener('click', () => {
+      clearInterval(intervalId);
+      counter--;
+      if (counter < 0) {
+        counter = slideCount - 1;
+        carouselImages.style.transition = 'none';
+        carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+      } else {
+        carouselImages.style.transition = 'transform 0.5s ease-in-out';
+        carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+      }
+      startCarousel();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      clearInterval(intervalId);
+      moveCarousel();
+      startCarousel();
+    });
+    
+      </script>
+</body>
+</html>

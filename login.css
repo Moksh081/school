@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.close-btn{
+    margin-left: 110%;
+}
+.top{
+    display: inline-flex;
+    margin-bottom: -4rem;
+    margin-right: -4rem;
+}
+.top h3{
+   font-size: larger;
+
+}
+.con{
+    border-width: 50%;
+    display: flex-block;
+    text-align: center;
+    justify-content: center;
+}
+.login{
+    margin-top: 2rem;
+    display: flex-block;
+    text-align: center;
+    justify-content: center;
+}
+body{
+    background: transparent;
+}
+.email{
+    display: inline-flex;
+
+}
+.pass{
+    display: inline-flex;
+}
+.H{
+    margin-top: -1.3rem;
+}
+.ep{
+    margin-left: 5%;
+}
+.epp{
+    padding-top: -3rem;
+}
+.btn{
+    border-radius: 10%;
+   border-color: white;
+
+  }
+  .btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: .1em;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #0ef;
+   
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s, box-shadow 1s;
+  }
+  .btn:hover{
+    transition-delay: 0s, 1s;
+    color: aqua;
+    box-shadow: 
+    0 0 10px #0ef,
+    0 0 20px #0ef,
+    0 0 40px #0ef,
+    0 0 80px #0ef,
+    0 0 160px #0ef;
+
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background: rgb(0, 60, 255);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: 1s;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn{
+    margin-top: 1rem;
+}
+
+.epp{
+    margin-left: 2rem;
+    
+}
+.sp{
+    margin-top: 2rem;
+    display: inline-flex;
+}
+#pa{
+    margin-left: -1rem;
+}
+.sp p{
+    padding-left: 5rem;
+}
+.sp a{
+    padding-top: 2rem;
+    padding-left: -5rem;
+}
+.pass i{
+    margin-left: -3rem;
+}
+.pass h3{
+    margin-left: -1rem;
+}
+#pa{
+margin-left: 1.5rem;
+}

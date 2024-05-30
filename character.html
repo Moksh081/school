@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Transformation</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            margin-top: 3.5%;
+            height: 100%;
+            width: 100%;
+        }
+
+        #video {
+            display: none; /* Initially hidden */
+            width: 70%;
+            height: 80%; /* Adjust video size */
+        }
+
+        .character {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px; /* Adjust character size */
+            height: 100px; /* Adjust character size */
+            background-image: url('character.gif'); /* Replace with your character image */
+            background-size: cover;
+          
+            transform: scaleX(-1); /* Flips the character initially */
+            z-index: 1;
+        }
+        .gif{
+            height:25rem;
+            width: 55rem;
+        }
+
+@keyframes moveCharacter {
+    0% {
+        transform: scaleX(-1) translateX(1500%);
+    }
+    100% {
+        transform: scaleX(-1) translateX(0%);
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <!--
+        <div class="image-container" >
+            <img src="welcome.gif" alt="Welcome GIF" class="gif">
+        </div>
+        -->
+        <div class="character"></div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var video = document.getElementsByClassName('image-container');
+            var character = document.querySelector('.character');
+
+            // Play the video once and when it ends, transform the character
+            video.onended = function() {
+                video.style.display = 'none';
+                character.style.display = 'block';
+                
+            };
+        };
+    </script>
+</body>
+</html>

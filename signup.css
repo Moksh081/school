@@ -1,0 +1,81 @@
+body{
+    position: absolute;
+    margin-left: 35%;
+    display: inline-flexbox;
+    text-align: center;
+    justify-content: center;
+    margin-top: 7rem;
+    font-family: Arial, sans-serif;
+            background: url('loginbg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+}
+.container{
+    backdrop-filter: blur(4px);
+    position: fixed;
+}
+.sig{
+    display: inline-flex;
+}
+.sig .close-btn{
+    font-size: larger;
+    cursor: pointer;
+    margin-left: 20rem;
+}
+.ia{
+    display: inline-flex;
+    padding-top: 1rem;
+    padding-right: 5rem;
+}
+.ia select{
+    margin-left: 0.5rem;
+}
+.btn{
+    border-radius: 10%;
+   border-color: white;
+
+  }
+  .btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: .1em;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #0ef;
+   
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s, box-shadow 1s;
+  }
+  .btn:hover{
+    transition-delay: 0s, 1s;
+    color: aqua;
+    box-shadow: 
+    0 0 10px #0ef,
+    0 0 20px #0ef,
+    0 0 40px #0ef,
+    0 0 80px #0ef,
+    0 0 160px #0ef;
+
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background: rgb(0, 60, 255);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: 1s;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn{
+    margin-top: 1rem;
+}

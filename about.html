@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Your custom styles here */
+        .bac{
+          font-size: larger;
+        }
+        .carousel {
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            width: 80%; /* Adjust as needed */
+            max-width: 700px;
+            height: auto;
+            margin-top: 2rem; /* Adjust as needed */
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            cursor: pointer; /* Add pointer cursor on hover */
+        }
+
+        .carousel-images img:hover {
+            transform: scale(1.1); /* Increase image size on hover */
+        }
+
+        .text_container {
+            text-align: center;
+            margin-top: 2rem; /* Adjust as needed */
+        }
+
+        .text {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .text p {
+            font-size: medium;
+        }
+
+        @media (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            .carousel {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <!-- Back button -->
+                <div class="bac">
+                    <a href="index.php"><i class='bx bx-left-arrow-circle'></i></a>
+                </div>
+            </div>
+            <div class="col-8">
+                <!-- About heading -->
+                <div class="about text-center">
+                    <h3>About</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel mx-auto">
+        <div class="carousel-images">
+            <img src="about1.jpg" alt="Image 1">
+            <img src="about2.jpg" alt="Image 2">
+            <img src="about3.jpg" alt="Image 3">
+            <img src="about4.jpg" alt="Image 4">
+        </div>
+    </div>
+
+    <!-- Text content -->
+    <div class="text_container">
+        <div class="text">
+            <h3>GOVERNMENT SENIOR SECONDARY SCHOOL</h3>
+            <h4>SANSARPUR TERRACE, DISTT. KANGRA HIMACHAL PRADESH PINCODE: 176501</h4>
+            <h4>HISTORY ESTD: 1966</h4>
+            <p>Originally this school was established by the Govt. Of Punjab in the year 1966(then Distt Kangra was part of Punjab but later Distt. Kangra was merged in Himachal Pradesh) as middle school, for the children of pong dam employees. In 1975, when project work of pong dam was completed, then this school was shifted to Talwara Township in Punjab 4 k.m. from Sansarpur Terrace. In 1979-1980 the Govt. of Himachal Pradesh declared Sansarpur Terrace as an industrial area. But the building of old middle school remained the property of Bhakhra Beas Management Board. (B.B.M.B.) in 1985 the Shah Nahar Irrigation Project was started by Himachal Pradesh Govt and its offices were opened at Sansarpur Terrace. The employees of Shah Nahar demanded school facility for their children. Then in 1985 the Govt. Of Himachal Pradesh opened a Middle school at Sansarpur Terrace in the campus of Govt. Primary School Sansarpur Terrace. Later in year 1986, with active cooperation and tireless efforts of Pradhan of that time Sh. Bhisham Chand Sharma and Staff of Schoot, State Govt. occupied this building. In 1987 the school was upgraded as High School and again upgraded to Sr. Sec. School in the year 1997.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Font Awesome JS (if needed) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <!-- Your custom script (if needed) -->
+    <script >
+      const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  const carouselImages = document.querySelector('.carousel-images');
+  
+  let counter = 0;
+  const size = carouselImages.clientWidth;
+  const slideWidth = size; // Adjust this value based on your image width and spacing
+  const slideCount = carouselImages.children.length;
+  let intervalId = null;
+  
+  const moveCarousel = () => {
+    counter++;
+    carouselImages.style.transition = 'transform 0.5s ease-in-out';
+    carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+  };
+  
+  const startCarousel = () => {
+    intervalId = setInterval(() => {
+      moveCarousel();
+      if (counter === slideCount - 1) {
+        setTimeout(() => {
+          carouselImages.style.transition = 'none';
+          carouselImages.style.transform = 'translateX(0)';
+          counter = 0;
+        }, 500);
+      }
+    }, 3000); // Adjust the interval duration (in milliseconds) as needed
+  };
+  
+  startCarousel();
+  
+  prevBtn.addEventListener('click', () => {
+    clearInterval(intervalId);
+    counter--;
+    if (counter < 0) {
+      counter = slideCount - 1;
+      carouselImages.style.transition = 'none';
+      carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+    } else {
+      carouselImages.style.transition = 'transform 0.5s ease-in-out';
+      carouselImages.style.transform = `translateX(${-slideWidth * counter}px)`;
+    }
+    startCarousel();
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    clearInterval(intervalId);
+    moveCarousel();
+    startCarousel();
+  });
+  
+    </script>
+</body>
+</html>
+
+
+
+

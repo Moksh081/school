@@ -1,0 +1,368 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* border: border-box; */
+    height: 100%;
+    background-color: #000;
+    color: rgba(201, 199, 199, 0.932);
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    background-image: url('con.jpg');
+      background-size :cover;
+      z-index: -1;
+}
+.bac{
+    font-size: larger;
+}
+.conn{
+    margin-top: -5rem;
+    position: relative;
+}
+  #sponsor_contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+    #main_contact_us{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background-image: url('hlo.jpg');
+      background-size :cover;
+      z-index: -1;
+  }
+  i{
+      font-size: 3vw;
+      margin-bottom: 100px;
+  }
+  i:hover{
+      transition: transform 0.1s;
+      transform: scale(1.3);
+  }
+  #d_contact_us{
+    display: flex;
+    flex-basis: row;
+  }
+  
+  .title_contact_us{
+      font-size: 30px;
+      color: white;
+      padding-top: 1%;
+   }
+   ._title_contact_us{
+       color: white;
+       font-size: 20px;
+       padding-top: 0%;
+   }
+   .query_contact_us{
+      display: flex;
+      flex-direction: column;
+  }
+  #query1_contact_us{
+      margin-left: 150px;
+      margin-bottom: 50px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+  #query2_contact_us{
+      margin-left: 125px;
+      display: flex;
+      margin-bottom: 30px;
+      text-align: center;
+      justify-content: center;
+      border-radius: 15px;
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+         background: rgba(255,255,255,0.1);
+         backdrop-filter: blur(10px);
+          flex: wrap;
+      }
+  
+  #icon1_contact_us{
+      color: white;
+      width: 50px;
+      font: normal normal normal 14px/1 FontAwesome;
+      background-color: transparent;
+      cursor: pointer;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  
+  }
+  #globe_contact_us:hover{
+      transition: transform 1s;
+  }
+  #incon1_contact_us{
+      color: white;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+  }
+  #icon2_contact_us{
+      padding-left: 30px;
+      color: white;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+  }
+  #icon3_contact_us{
+      padding-left: 30px;
+      color: white;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+  }
+  #icon4_contact_us{
+      padding-left: 30px;
+      color: white;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+  }
+  div{
+      box-sizing: content-box;
+  }
+  #d_contact_us{
+  box-sizing: content-box;
+  display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+  .content_contact_us {
+      position: relative; 
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden; 
+    }
+    .content_contact_us::before {
+      content: "";
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; 
+      background: url('new.mp4') no-repeat center center / cover;
+      opacity: 0.5; 
+      pointer-events: none; 
+    }
+    .content_contact_us {
+      position: relative;
+      bottom : 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+      background-image: url('hlo.mp4');
+      
+    }
+    #btn_contact_us{
+      border-radius: 10%;
+     border-color: white;
+    margin-bottom: 50px;
+    }
+    #bt_contact_us{
+      position: relative;
+      display: inline-block;
+      font-size: 1.2em;
+      cursor: pointer;
+      letter-spacing: .1em;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid #0ef;
+      padding: 10px 30px;
+      z-index: 1;
+      overflow: hidden;
+      transition: color 1s, box-shadow 1s;
+    }
+    #bt_contact_us:hover{
+      transition-delay: 0s, 1s;
+      color: #fff;
+      box-shadow: 
+      0 0 10px #0ef,
+      0 0 20px #0ef,
+      0 0 40px #0ef,
+      0 0 80px #0ef,
+      0 0 160px #0ef;
+  
+    }
+    #bt_contact_us::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50px;
+      width: 0;
+      height: 100%;
+      background: #0ef;
+      transform: skewX(35deg);
+      z-index: -1;
+      transition: 1s;
+  }
+  #bt_contact_us:hover::before{
+      width: 100%;
+  }
+    .pl_contact_us{
+      display: flex;
+      flex-basis: row;
+      margin-top: 5%;
+      text-align: center;
+      justify-content: center;
+    }
+    #name_contact_us{
+      margin-left: 10%;
+    }
+   .input_contact_us{
+      background: transparent;
+      width:290px;
+      height:40px;
+      padding-left: 2px;
+      outline: none;
+      border: none;
+      font-size: 15px;
+      margin-bottom: 10px;
+      background: none;
+      border-bottom: 2px solid #fff;
+   }
+      #fr_contact_us{
+          color: #fff;
+          font-weight: 500;
+          margin-top: 20px;
+          width: 500px;
+          text-align: center;
+      }
+      
+      
+    
+    #email{
+      margin-left: 0%;
+    }
+    #message{
+      margin-left: 3%;
+    }
+    *{
+      padding: 0;
+      margin:0;
+  }
+  
+  
+  
+    @media screen and (min-width: 1320px) {
+      #main_contact_us {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          justify-content: center;
+          }
+  }
+    @media screen and (max-width: 1200px) {
+      #main_contact_us {
+      display: flex;
+      flex-direction: column;
+      }
+      #message{
+          margin-left: 5%;
+          background: transparent;
+      }
+      #query2_contact_us{
+          margin-left: -5%;
+      }
+  }
+  @media screen and (max-width: 719px) {
+      #main_contact_us {
+      display: flex;
+      flex-direction: column;
+      }
+      #message{
+          margin-left: 8%;
+          background: transparent;
+      }
+  }
+  @media screen and (max-width: 670px) {
+      #query1_contact_us{
+          margin-left: 125px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      }
+      #query2_contact_us{
+          margin-left: 0%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          border-radius: 15px;
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+          background: rgba(255,255,255,0.1);
+          backdrop-filter: blur(10px);
+          flex: wrap;
+      }
+  }
+  
+  @media screen and (max-width: 530px) {
+      #query1_contact_us{
+          margin-left: 80px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      }
+      #query2_contact_us{
+          margin-left: 0%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+      }
+  }
+  @media screen and (max-width: 679px) {
+      #query2_contact_us{
+          margin-left: -5%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+      }
+  }
+  @media screen and (max-width: 460px) {
+      #query1_contact_us{
+          margin-left: 20px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      }
+      #query2_contact_us{
+          margin-left: -5%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+      }
+  }
+  @media screen and (max-width: 370px) {
+    
+      #query2_contact_us{
+          margin-left: 0px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+      }
+  }
+  @media screen and (max-width: 260px) {
+      #query1_contact_us{
+          margin-left: 0px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      }
+      #query2_contact_us{
+          margin-left: 0px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+      }
+  }
