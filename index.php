@@ -48,7 +48,7 @@
         }
 
         .c {
-            margin-top: -10rem;
+            margin-top: -5rem;
         }
 
         .t {
