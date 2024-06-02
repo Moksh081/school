@@ -28,6 +28,7 @@
             justify-content: center;
             align-items: center;
             padding-top: 60px; /* To account for the fixed header */
+            z-index: 1; /* Ensure it's below the header */
         }
 
         footer {
@@ -35,8 +36,9 @@
             flex-direction: column;
             align-items: center;
             padding-bottom: 50px; /* To account for the fixed chatbot */
+            z-index: 1; /* Ensure it's below the header */
         }
-        
+
         .bot {
             margin: 0;
             position: fixed;
