@@ -48,11 +48,11 @@
         }
 
         .c {
-            padding-top: 1rem;
+            margin-top: -10rem;
         }
 
         .t {
-            margin-top: 1rem;
+           
             text-align: center;
         }
 
@@ -64,7 +64,7 @@
             }
 
             .t {
-                margin-top: 1rem;
+                margin-top: -10rem;
                 margin-left: 0;
                 position: relative;
                 text-align: center;
