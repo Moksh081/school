@@ -1,7 +1,5 @@
 # 🏫 MySchool – A Responsive Website for Government Schools
 
-<img width="542" height="251" alt="image" src="https://github.com/user-attachments/assets/5fc44695-25c0-4a64-a4fa-58318cd55edf" />
-
 **Live Site:** [https://school-zvw4.onrender.com](https://school-zvw4.onrender.com)  
 **Repository:** [https://github.com/Moksh081/school](https://github.com/Moksh081/school)
 
@@ -23,7 +21,7 @@ This was my **first full-stack web project**, created to support my school digit
 
 ---
 
-## 📸 Screenshots
+## 📸 
 
 | Homepage | 
 |---------|
